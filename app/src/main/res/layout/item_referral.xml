@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Student Name -->
+        <TextView
+            android:id="@+id/referred_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="18sp"
+            android:textColor="@color/maroon"
+            android:textStyle="bold" />
+
+        <!-- Referred By -->
+        <TextView
+            android:id="@+id/referred_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Referred by: Referrer Name"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Referral Date -->
+        <TextView
+            android:id="@+id/referral_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Referral Date: 01/01/2024"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Referral Date -->
+        <TextView
+            android:id="@+id/referral_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Status: Status"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Concern -->
+        <TextView
+            android:id="@+id/reason_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concern: Academics (Absenteeism)"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

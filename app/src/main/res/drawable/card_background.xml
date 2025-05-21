@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Light gray background color for the card -->
+    <solid android:color="#F1F1F1"/>  <!-- You can change this color to your preferred one -->
+    <corners android:radius="8dp"/>
+    <elevation android:value="4dp"/>
+</shape>

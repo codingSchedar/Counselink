@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">CounseLink</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="splash_logo_desc">CounseLink</string>
+    <string name="app_name_counselink">CounseLink</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="register_here">Register Here</string>
+    <string name="please_fill_the_credentials">Please fill the credentials</string>
+    <string name="id_number">ID Number</string>
+    <string name="user">User</string>
+    <string name="notifications">notifications</string>
+    <string name="home">home</string>
+    <string name="analytics">analytics</string>
+    <string name="history">history</string>
+    <string name="profile_picture">profile_picture</string>
+    <string name="about_us_message">
+    CounselLink streamlines the work of counselors by providing an efficient platform for managing referrals and student interactions. Our mission is to empower academic success and mental well-being through in-app visualization tools, statistical reporting, and features designed to assist the CATC office in handling responsibilities with ease and precision.
+    </string>
+
+
+    <!-- Academic Reason for Referral -->
+    <string-array name="academic_reasons">
+        <item>NA</item>
+        <item>Attendance</item>
+        <item>Performance</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Social/Emotional Reason for Referral -->
+    <string-array name="social_emotional_reasons">
+        <item>NA</item>
+        <item>Personal</item>
+        <item>Friends</item>
+        <item>Love Life</item>
+        <item>Family</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!-- Array for Months -->
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!-- Array for Years -->
+    <string-array name="years_array">
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <!-- Add more years as needed -->
+    </string-array>
+
+    <!-- Array for Hours -->
+    <string-array name="hours_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- Array for Minutes -->
+    <string-array name="minutes_array">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <!-- Array for AM/PM -->
+    <string-array name="ampm_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <!-- Department List -->
+    <string-array name="department_acronyms">
+        <item>LIMA</item>
+        <item>CAMP</item>
+        <item>CBA</item>
+        <item>CCJE</item>
+        <item>COD</item>
+        <item>CCAS</item>
+        <item>CON</item>
+        <item>CITHM</item>
+        <item>ETEEAP</item>
+        <item>CTE</item>
+    </string-array>
+
+    <!-- Programs for Each Department -->
+    <string-array name="LIMA_programs">
+        <item>BS Marine Transportation</item>
+        <item>BS Marine Engineering</item>
+    </string-array>
+
+    <string-array name="CAMP_programs">
+        <item>BS Biology Major in Medical Biology</item>
+        <item>BS Medical Laboratory Science</item>
+        <item>BS Pharmacy</item>
+        <item>BS Physical Therapy</item>
+        <item>BS Radiologic Technology</item>
+        <item>Diploma in Pharmacy Assisting</item>
+        <item>Diploma in Phlebotomy</item>
+    </string-array>
+
+    <string-array name="CBA_programs">
+        <item>BS Accountancy</item>
+        <item>BS Business Administration Major in Financial Management</item>
+        <item>Marketing Management</item>
+        <item>Human Resource Development Management</item>
+        <item>Operations Management</item>
+        <item>BS Customs Administration</item>
+    </string-array>
+
+    <string-array name="CCJE_programs">
+        <item>BS Criminology</item>
+        <item>Bachelor of Forensic Science</item>
+    </string-array>
+
+    <string-array name="COD_programs">
+        <item>Doctor of Dental Medicine</item>
+    </string-array>
+
+    <string-array name="CCAS_programs">
+        <item>AB Communication</item>
+        <item>AB Psychology</item>
+        <item>BS Psychology</item>
+        <item>Bachelor of Multimedia Arts</item>
+        <item>BS Computer Science</item>
+        <item>BS Information Technology</item>
+    </string-array>
+
+    <string-array name="CON_programs">
+        <item>BS Nursing</item>
+    </string-array>
+
+    <string-array name="CITHM_programs">
+        <item>BS International Travel and Tourism Management</item>
+        <item>BS International Hospitality Management</item>
+        <item>Associate in International Travel and Tourism Management</item>
+    </string-array>
+
+    <string-array name="ETEEAP_programs">
+        <item>Bachelor of Science in Business Administration</item>
+        <item>Bachelor of Science in Criminology</item>
+        <item>Bachelor of Science in Information Technology</item>
+        <item>Bachelor of Science in Nursing</item>
+    </string-array>
+
+    <string-array name="CTE_programs">
+        <item>Certificate in Culinary Arts</item>
+        <item>Certificate in Pastry Arts</item>
+    </string-array>
+
+    <!-- Year Level (1st Year to 6th Year) -->
+    <string-array name="year_level_array">
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+        <item>5th Year</item>
+        <item>6th Year</item>
+    </string-array>
+
+    <string-array name="referral_status_options">
+        <item>Pending</item>
+        <item>Processing</item>
+        <item>Counselled</item>
+        <item>Follow-Up</item>
+        <item>Done</item>
+    </string-array>
+</resources>

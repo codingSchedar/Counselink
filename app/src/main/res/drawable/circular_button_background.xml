@@ -1,0 +1,7 @@
+<!-- res/drawable/circular_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="2dp"
+        android:color="@color/maroon" />
+    <corners android:radius="20dp" />
+</shape>

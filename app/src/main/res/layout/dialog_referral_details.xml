@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Referral Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@color/maroon"
+        android:textColor="@android:color/white" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginVertical="8dp" />
+
+    <!-- Student Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wayne"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <!-- Student ID -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student ID:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="21124579"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <!-- Student ID -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Referred by:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/referrer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="referrer name"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+
+    <!-- Referral Date -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Referral Date:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/referral_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01/01/2024"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <!-- Concern -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Academic Concern:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/academic_concern_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:textSize="14sp"
+        android:padding="4dp" />
+    <!-- Concern -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Social/Emotional Concern:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/social_emtional_concern_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Love Life"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <!-- Comments -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/comments_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Needs Counseling"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <!-- Status -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <Spinner
+        android:id="@+id/status_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@color/maroon"
+        android:backgroundTint="@color/maroon"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="#B85C5C"
+        android:backgroundTint="#B85C5C"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+</LinearLayout>

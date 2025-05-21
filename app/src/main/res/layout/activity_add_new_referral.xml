@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Main Content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Part 1: Top Bar with Back Button and Title -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/maroon"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/back_icon"
+                android:visibility="gone"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back_dark"
+                android:contentDescription="Back"
+                android:tint="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Title Text ("Referral") -->
+            <TextView
+                android:id="@+id/referral_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referral"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@id/back_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingStart="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Subtle Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            app:layout_constraintTop_toBottomOf="@id/top_bar"
+            android:layout_marginTop="1dp" />
+
+        <!-- Part 2: Scrollable Referral Form -->
+        <android.widget.ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginVertical="3dp"
+            app:layout_constraintTop_toBottomOf="@id/top_bar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Student Name -->
+                <TextView
+                    android:id="@+id/studentNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name"
+                    android:textSize="16sp"
+                    android:textColor="@color/maroon"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/studentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Student Name"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Student Number -->
+                <TextView
+                    android:id="@+id/studentNumberLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Number"
+                    android:textSize="16sp"
+                    android:textColor="@color/maroon"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/studentNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Student Number"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Academic Reason for Referral -->
+                <TextView
+                    android:id="@+id/academicReasonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Reason for Referral"
+                    android:textSize="16sp"
+                    android:textColor="@color/maroon"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Spinner for Academic Reason -->
+                <Spinner
+                    android:id="@+id/academicReasonSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- "Other" field for Academic Reason -->
+                <EditText
+                    android:id="@+id/academicOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other (Specify)"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Social/Emotional Reason for Referral -->
+                <TextView
+                    android:id="@+id/socialEmotionalReasonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Social/Emotional Reason for Referral"
+                    android:textSize="16sp"
+                    android:textColor="@color/maroon"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Spinner for Social/Emotional Reason -->
+                <Spinner
+                    android:id="@+id/socialEmotionalReasonSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- "Other" field for Social/Emotional Reason -->
+                <EditText
+                    android:id="@+id/socialEmotionalOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other (Specify)"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Comments Section -->
+                <TextView
+                    android:id="@+id/commentsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:textSize="16sp"
+                    android:textColor="@color/maroon"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/commentsField"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:hint="Anything that may be helpful to know ahead of time."
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="top" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textColor="@android:color/white"
+                    android:background="@color/maroon" />
+            </LinearLayout>
+
+        </android.widget.ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,200 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <!-- Top Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:visibility="gone"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back_dark"
+            android:contentDescription="Back"
+            android:tint="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/analytics_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analytics"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toEndOf="@id/back_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingStart="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Date Picker Section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/date_picker_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                android:background="@color/tile_bg">
+
+                <!-- From Date Label -->
+                <TextView
+                    android:id="@+id/from_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Date"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- From Month Spinner -->
+                <Spinner
+                    android:id="@+id/fromMonthSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/from_date_label" />
+
+                <!-- From Day Spinner -->
+                <Spinner
+                    android:id="@+id/fromDaySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/from_date_label"
+                    app:layout_constraintStart_toEndOf="@id/fromMonthSpinner" />
+
+                <!-- From Year Spinner -->
+                <Spinner
+                    android:id="@+id/fromYearSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/from_date_label"
+                    app:layout_constraintStart_toEndOf="@id/fromDaySpinner" />
+
+                <!-- To Date Label -->
+                <TextView
+                    android:id="@+id/to_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Date"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/fromYearSpinner"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <!-- To Month Spinner -->
+                <Spinner
+                    android:id="@+id/toMonthSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/to_date_label"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <!-- To Day Spinner -->
+                <Spinner
+                    android:id="@+id/toDaySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/to_date_label"
+                    app:layout_constraintStart_toEndOf="@id/toMonthSpinner" />
+
+                <!-- To Year Spinner -->
+                <Spinner
+                    android:id="@+id/toYearSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/to_date_label"
+                    app:layout_constraintStart_toEndOf="@id/toDaySpinner" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Pie Chart -->
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@id/date_picker_section"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Filter Spinner -->
+            <Spinner
+                android:id="@+id/filterSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@id/pieChart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Vulnerable Students Header -->
+            <TextView
+                android:id="@+id/vulnerable_students_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top 10 Vulnerable Students"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@android:color/holo_blue_light"
+                app:layout_constraintTop_toBottomOf="@id/filterSpinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Vulnerable Students List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vulnerableStudentsList"
+                android:background="@color/tile_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@id/vulnerable_students_header"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- View Statistics Button -->
+            <Button
+                android:id="@+id/viewStatisticsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Statistics"
+                android:background="@color/maroon"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/vulnerableStudentsList"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
