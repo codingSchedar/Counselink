@@ -19,7 +19,26 @@ Screenshots
 Important Notes
 
 About the App
-Counselink helps manage various tasks related to student-counselor interactions, with specific features tailored for counselors, students, and administrators. The app leverages analytics to allow counselors to track student data and view it through intuitive charts. It also provides them with the ability to filter the data based on dates, departments, and other criteria.
+Counselink is an Android application developed entirely by Wayne Christian Santiago for the CATC Office of LPU Batangas. This app aims to streamline student support services by integrating advanced analytics, appointment scheduling, and referral management, all in one easy-to-use interface.
+
+The project was designed and built by me, who handled all aspects of the development, including:
+
+App Design & Development using Android Studio (Java/Kotlin)
+
+Backend Integration with Firebase for authentication, data storage, and real-time updates
+
+Email OTP Integration for secure user login
+
+Analytics integration using regression analysis to provide counselors with insights on student data
+
+While the project was part of a thesis, Wayne Christian Santiago was responsible for all coding, database integration, and API management from start to finish.
+
+Acknowledgments
+Jamir Asilo, Avery Apritado, Jane Mangubat: While I was the sole developer of the app, I would like to acknowledge the valuable contributions of my groupmates. Jamir, Avery, and Jane helped in improving the app’s design by providing the Figma frontend designs, making the user interface more visually appealing. They also assisted in the preparation of the paperwork, although I was responsible for final checks and edits.
+
+LPU Batangas CATC Office: For their valuable feedback and support throughout the development process.
+
+Firebase: For providing an easy-to-integrate platform that helped manage authentication and real-time data updates.
 
 The app is designed using Android Studio, Firebase, and integrates Email OTP for secure authentication. The system supports three types of users:
 
