@@ -104,7 +104,7 @@ Clone the Repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/counselink.git
+git clone https://github.com/codingSchedar/counselink.git
 Open the Project:
 
 Open Android Studio and import the project directory.
